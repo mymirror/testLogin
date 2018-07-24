@@ -14,13 +14,16 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 214fe6d0dd182a912b335d2684384d2e1fc7b8f0
+PODFILE CHECKSUM: 8e6ce6acd6ffa90b6935d4927e5f340fffdc0c65
 
 COCOAPODS: 1.4.0

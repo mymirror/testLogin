@@ -6,4 +6,6 @@ target ‘loginTest’ do
 
 pod 'AFNetworking'
 
+pod 'Masonry'
+
 end

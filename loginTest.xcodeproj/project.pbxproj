@@ -13,6 +13,7 @@
 		350B4D442105C3A200E0A50F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350B4D432105C3A200E0A50F /* Assets.xcassets */; };
 		350B4D472105C3A200E0A50F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 350B4D452105C3A200E0A50F /* LaunchScreen.storyboard */; };
 		350B4D4A2105C3A200E0A50F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 350B4D492105C3A200E0A50F /* main.m */; };
+		350B4D522106F93800E0A50F /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 350B4D512106F93800E0A50F /* testViewController.m */; };
 		9B5AAD2A5E75725FD4A12BFF /* Pods_loginTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF839EB641F65BF2766222E /* Pods_loginTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,8 @@
 		350B4D462105C3A200E0A50F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		350B4D482105C3A200E0A50F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350B4D492105C3A200E0A50F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		350B4D502106F93800E0A50F /* testViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		350B4D512106F93800E0A50F /* testViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		6A1FE5E53A6BFC622A1B0BE9 /* Pods-loginTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-loginTest/Pods-loginTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B81FE0090F5EEE783A311F05 /* Pods-loginTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loginTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-loginTest/Pods-loginTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +72,8 @@
 				350B4D3B2105C3A100E0A50F /* AppDelegate.m */,
 				350B4D3D2105C3A100E0A50F /* ViewController.h */,
 				350B4D3E2105C3A100E0A50F /* ViewController.m */,
+				350B4D502106F93800E0A50F /* testViewController.h */,
+				350B4D512106F93800E0A50F /* testViewController.m */,
 				350B4D402105C3A100E0A50F /* Main.storyboard */,
 				350B4D432105C3A200E0A50F /* Assets.xcassets */,
 				350B4D452105C3A200E0A50F /* LaunchScreen.storyboard */,
@@ -205,10 +210,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-loginTest/Pods-loginTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -224,6 +231,7 @@
 			files = (
 				350B4D3F2105C3A100E0A50F /* ViewController.m in Sources */,
 				350B4D4A2105C3A200E0A50F /* main.m in Sources */,
+				350B4D522106F93800E0A50F /* testViewController.m in Sources */,
 				350B4D3C2105C3A100E0A50F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

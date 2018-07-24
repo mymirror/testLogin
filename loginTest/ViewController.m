@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import <Masonry/Masonry.h>
 
 @interface ViewController ()
 
@@ -20,8 +21,26 @@
     
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(100, 100, 100, 40)];
     label.text = @"测试登录";
-    [self.view addSubview:label];;
+    [self.view addSubview:label];
     
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [btn setTitle:@"点击登录" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(loginAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.mas_equalTo(label.mas_bottom).with.offset(50);
+        make.centerX.mas_equalTo(self.view.mas_centerX);
+        make.height.mas_equalTo(44);
+    }];
+    
+    
+}
+
+- (void)loginAction
+{
+    UIViewController *vc = [NSClassFromString(@"testViewController") new];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 
